@@ -4,4 +4,4 @@ def greet(name):
     return "Hello, hola, aloha " + name + "!!"
 
 iface = gr.Interface(fn=greet, inputs="text", outputs="text")
-iface.launch()
+iface.launch(auth=("admin", "pass1234"))
