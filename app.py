@@ -15,6 +15,7 @@ def greet(name):
 
 iface = gr.Interface(fn=greet, inputs="text", outputs="text")
 
-#iface.launch(auth=("admin", "pass1234"))
 
-iface.launch(auth=authenticate)
+iface.launch()
+#iface.launch(auth=("admin", "pass1234"))
+#iface.launch(auth=authenticate)
