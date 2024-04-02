@@ -1,5 +1,6 @@
 import gradio as gr
-
+import time
+from baf import bafta
 #Funciones adicionales
 
 def authenticate(username, password):
@@ -11,7 +12,9 @@ def authenticate(username, password):
 
 #Función principal
 def greet(name):
-    return "Tervetuloa " + name + "!!"
+    tokens = bafta()
+    print(tokens)
+    return "Tervetuloa " + name + tokens + "!!"
 
 iface = gr.Interface(fn=greet, inputs="text", outputs="text")
 
