@@ -11,10 +11,9 @@ def authenticate(username, password):
 
 #Función principal
 def greet(name):
-    return "Hello, hola, aloha " + name + "!!"
+    return "Tervetuloa " + name + "!!"
 
 iface = gr.Interface(fn=greet, inputs="text", outputs="text")
-
 
 iface.launch()
 #iface.launch(auth=("admin", "pass1234"))
