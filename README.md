@@ -1,6 +1,6 @@
 ---
-title: Basico
-emoji: 🏃
+title: Basico-Charged
+emoji: 🏃⚡
 colorFrom: yellow
 colorTo: gray
 sdk: gradio
