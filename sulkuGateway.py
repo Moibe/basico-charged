@@ -11,7 +11,7 @@ def getTokens(sulkukey):
     print("A punto de hacer llamado a cliente de API via Sulku...")
     time.sleep(3)
     try:
-        client = gradio_client.Client("Moibe/sulku", nodes.hf_token, verbose=False)
+        client = gradio_client.Client("Moibe/sulku", verbose=False)
         resultado = client.predict(sulkukey, api_name="/getTokens")
         
         return resultado
